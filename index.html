@@ -344,43 +344,13 @@ text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 
   <script>
    const site1 = "https://margs112.github.io/SENTRO-CREDENTIALS2026/";
-const site2 = "https://margs112.github.io/SENTROPLATFORMS2026/";
+const site1 = "https://margs112.github.io/SENTROPLATFORMS2026/";
 const site3 = "https://drive.google.com/drive/folders/13d1g9LVx4nIygDuztmkx6IXwctVz_mFj?usp=drive_link";
 
-let visited1 = localStorage.getItem("visited1") === "true";
-let visited2 = localStorage.getItem("visited2") === "true";
 
 const b1 = document.getElementById("btn1");
 const b2 = document.getElementById("btn2");
-const b3 = document.getElementById("btn3");
 
-function unlockFinalModule() {
-  if (visited1 && visited2) {
-    b3.disabled = false;
-    b3.classList.remove("locked");
-    b3.textContent = "✔ Access Photobooth";
-  }
-}
-
-b1.addEventListener("click", () => {
-  visited1 = true;
-  localStorage.setItem("visited1", "true");
-  unlockFinalModule();
-  setTimeout(() => window.location.href = site1, 300);
-});
-
-b2.addEventListener("click", () => {
-  visited2 = true;
-  localStorage.setItem("visited2", "true");
-  unlockFinalModule();
-  setTimeout(() => window.location.href = site2, 300);
-});
-
-b3.addEventListener("click", () => {
-  if (!b3.disabled) window.location.href = site3;
-});
-
-unlockFinalModule();
 
   </script>
 </body>
