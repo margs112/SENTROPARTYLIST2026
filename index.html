@@ -343,15 +343,19 @@ text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   </div>
 
   <script>
-   const site1 = "https://margs112.github.io/SENTRO-CREDENTIALS2026/";
-const site1 = "https://margs112.github.io/SENTROPLATFORMS2026/";
-const site3 = "https://drive.google.com/drive/folders/13d1g9LVx4nIygDuztmkx6IXwctVz_mFj?usp=drive_link";
-
+  const credentialsURL = "https://margs112.github.io/SENTRO-CREDENTIALS2026/";
+const platformsURL = "https://margs112.github.io/SENTROPLATFORMS2026/";
 
 const b1 = document.getElementById("btn1");
 const b2 = document.getElementById("btn2");
 
+b1.addEventListener("click", function () {
+  window.open(credentialsURL, "_blank");
+});
 
+b2.addEventListener("click", function () {
+  window.open(platformsURL, "_blank");
+});
   </script>
 </body>
 </html>
